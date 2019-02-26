@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if(view == buttonSignin) {
             Toast.makeText(this, "sign in pressed", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, LoginActivity.class));
 
         }
     }
